@@ -1,1 +1,2 @@
-delete from piloto_entity;
+delete from pilotos;
+delete from tipos_piloto;

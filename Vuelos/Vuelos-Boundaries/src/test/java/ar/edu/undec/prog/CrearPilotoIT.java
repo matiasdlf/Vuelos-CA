@@ -18,8 +18,8 @@ import static junit.framework.TestCase.assertTrue;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @SqlGroup({
-        @Sql(executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD, scripts = "classpath:crearPilotoAntes.sql")
-        //@Sql(executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD, scripts = "classpath:crearPilotoDespues.sql")
+        @Sql(executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD, scripts = "classpath:crearPilotoAntes.sql"),
+        @Sql(executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD, scripts = "classpath:crearPilotoDespues.sql")
 })
 public class CrearPilotoIT {
 

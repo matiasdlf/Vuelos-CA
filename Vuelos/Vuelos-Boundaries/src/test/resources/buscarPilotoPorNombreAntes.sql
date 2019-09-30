@@ -1,6 +1,8 @@
-Delete from piloto;
+Delete from pilotos;
+alter SEQUENCE seq_tipo_piloto restart with 1;
+Insert into tipos_piloto (id_tipo_piloto,denominacion) values(nextval('seq_tipo_piloto'),'Comandante');
 
-INSERT INTO public.piloto(id_piloto, apellido, dni, nombre) VALUES (nextval('seq_piloto'), 'Perez', '001', 'Juan');
-INSERT INTO public.piloto(id_piloto, apellido, dni, nombre) VALUES (nextval('seq_piloto'), 'Lopez', '001', 'JuanFer');
-INSERT INTO public.piloto(id_piloto, apellido, dni, nombre) VALUES (nextval('seq_piloto'), 'Gomez', '001', 'Carlos');
-INSERT INTO public.piloto(id_piloto, apellido, dni, nombre) VALUES (nextval('seq_piloto'), 'Paez', '001', 'Luis');
+INSERT INTO pilotos(id_piloto, apellido, dni, nombre, tipo_piloto_id_tipo_piloto) VALUES (nextval('seq_piloto'), 'Perez', '001', 'Juan',1);
+INSERT INTO pilotos(id_piloto, apellido, dni, nombre, tipo_piloto_id_tipo_piloto) VALUES (nextval('seq_piloto'), 'Lopez', '001', 'JuanFer',1);
+INSERT INTO pilotos(id_piloto, apellido, dni, nombre, tipo_piloto_id_tipo_piloto) VALUES (nextval('seq_piloto'), 'Gomez', '001', 'Carlos',1);
+INSERT INTO pilotos(id_piloto, apellido, dni, nombre, tipo_piloto_id_tipo_piloto) VALUES (nextval('seq_piloto'), 'Paez', '001', 'Luis',1);
