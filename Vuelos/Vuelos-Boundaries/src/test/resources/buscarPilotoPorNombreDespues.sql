@@ -1,0 +1,1 @@
+delete from piloto_entity;
