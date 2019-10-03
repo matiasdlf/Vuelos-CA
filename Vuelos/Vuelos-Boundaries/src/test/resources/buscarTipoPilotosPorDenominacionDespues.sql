@@ -1,0 +1,1 @@
+delete from tipos_piloto;
