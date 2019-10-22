@@ -9,7 +9,6 @@ public class BuscarPilotosPorNombreUseCase {
     private IBuscarPilotosPorNombreRepo buscarPilotosPorNombreRepo;
 
     public BuscarPilotosPorNombreUseCase(IBuscarPilotosPorNombreRepo buscarPilotosPorNombreRepo) {
-
         this.buscarPilotosPorNombreRepo = buscarPilotosPorNombreRepo;
     }
 

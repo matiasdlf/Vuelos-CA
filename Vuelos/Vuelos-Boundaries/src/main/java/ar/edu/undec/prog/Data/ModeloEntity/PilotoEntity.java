@@ -1,6 +1,4 @@
-package ar.edu.undec.prog.modeloEntity;
-
-import modelo.TipoPiloto;
+package ar.edu.undec.prog.Data.ModeloEntity;
 
 import javax.persistence.*;
 
@@ -19,7 +17,8 @@ public class PilotoEntity {
     private String dni;
 
 
-    @ManyToOne(cascade = CascadeType.ALL) //Cambiar a MERGE para evitar problema DETTACHED
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "tipo_piloto_id")
     private TipoPilotoEntity tipoPiloto;
 
     public PilotoEntity() {
