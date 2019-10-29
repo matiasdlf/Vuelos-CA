@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Vuelos-Boundaries:war">
+    <output-path>$PROJECT_DIR$/Vuelos-Boundaries/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Vuelos-Boundaries</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Vuelos-Boundaries-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Vuelos-Boundaries:war exploded" />
+    </root>
+  </artifact>
+</component>

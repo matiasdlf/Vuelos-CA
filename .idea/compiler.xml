@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Vuelos-Core" />
+        <module name="Vuelos-Boundaries" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Vuelos" target="1.5" />
+      <module name="Vuelos-Boundaries" target="8" />
+      <module name="Vuelos-Core" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
